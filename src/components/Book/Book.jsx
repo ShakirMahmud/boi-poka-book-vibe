@@ -17,7 +17,8 @@ const Book = ({ book }) => {
                 <div className="card-body">
                     <div className='flex justify-center gap-4'>
                         {
-                            tags.map(tag => <button className="btn bg-green-100 text-green-900 btn-xs">{tag}</button>)
+                            tags.map((tag, idx) => <button
+                            key={idx} className="btn bg-green-100 text-green-900 btn-xs">{tag}</button>)
                         }
                     </div>
                     <h2 className="card-title">
